@@ -1,0 +1,21 @@
+body {
+    background-color: #95DAC1;
+    display: inline-block;
+  }
+  
+  .titleStyle {
+    visibility: hidden;
+  }
+  
+  .newStyle {
+    width: 500px;
+    height: 200px;
+    background-color: #FFEBA1;
+  }
+
+#title {
+  
+}
+
+
+ 
