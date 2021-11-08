@@ -4,98 +4,87 @@ body {
     font-family: Verdana;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 #container1 {
-width: 100%;
-height: 60px;
-background-color: #DB9370;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-
+    width: 100%;
+    height: 60px;
+    background-color: #DB9370;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #ohmydeer {
-justify-content: flex-start;
-display: flex;
-flex-direction: row;
-align-items: center;
-padding-left: 20px;
-font-size: 20px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 #main {
-display: flex;
-flex-direction: row;
-align-items: center;
-
-
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .mainmenu {
-
-flex-direction: row;
-display: flex;
-justify-content: center;
-margin-right: 25px;
-
-
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
 }
 
 .mainmenu:hover {
-background-color: #FFFFCC;
-border: 4px solid black;
-width: 120px;
-height: 25px;
-justify-content: center;
-/*width: 50px;
+    background-color: #FFFFCC;
+    border: 4px solid black;
+    width: 120px;
+    height: 25px;
+    justify-content: center;
+    /*width: 50px;
 height: 40px;
 }*/
 }
 
-
 #container2 {
-height: 600px;
-width: 100%;
-flex-direction: row;
-display: flex;
-justify-content: space-evenly;
-
-
+    /*height: 600px;*/
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #text {
-margin-left: 60px;
+    margin-left: 60px;
 }
 
 #obrazek {
-
-margin-top: 100px;
-margin-left: 60px;
-display: flex;
+    margin-top: 100px;
+    margin-left: 60px;
+    display: flex;
 }
 
-
-
 #left-wall {
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 #buttontrial {
-background-color: #DB9370;
-border-radius: 10px;
-width: 170px;
-height: 50px;
-margin-left: 60px;
-justify-content: center;
-/*text-align: center;*/
-display: flex;
-align-items: center;
+    background-color: #DB9370;
+    border-radius: 10px;
+    width: 170px;
+    height: 50px;
+    margin-left: 60px;
+    justify-content: center;
+    /*text-align: center;*/
+    display: flex;
+    align-items: center;
 }
 
 #newanimal {
@@ -108,35 +97,98 @@ align-items: center;
     /*text-align: center;*/
     display: flex;
     align-items: center;
-    }
+}
 
-    #deletedeer {
-        background-color: #DB9370;
-        border-radius: 10px;
-        width: 170px;
-        height: 50px;
-        margin-left: 60px;
-        justify-content: center;
-        /*text-align: center;*/
-        display: flex;
-        align-items: center;
-        }
+#deletedeer {
+    background-color: #DB9370;
+    border-radius: 10px;
+    width: 170px;
+    height: 50px;
+    margin-left: 60px;
+    justify-content: center;
+    /*text-align: center;*/
+    display: flex;
+    align-items: center;
+}
 
 #mainbody {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #container3 {
-width: 100%;
-height: 60px;
-background-color: grey;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .newStyle {
     display: none;
-  }
+}
+
+#burgermenu {
+    display: none;
+}
+
+@media screen and (max-width: 376px) {
+    #main {
+        display: none;
+    }
+    #newanimal {
+        display: none;
+    }
+    #deletedeer {
+        display: none;
+    }
+    #myList {
+        display: none;
+    }
+    #burgermenu {
+        display: block;
+        margin-right: 10px;
+    }
+    #obrazek {
+        margin: 0 auto;
+        padding: 0;
+    }
+    #container2 {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #obrazekdeer {
+        width: 100%;
+    }
+    #text {
+        margin: 0;
+    }
+    #left-wall {
+        justify-content: center;
+        align-items: center;
+    }
+    #buttontrial {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    body {
+        margin: 0;
+    }
+}
+
+/*@media (max-width: 1050px){
+        #main {
+            display:none;
+        }
+        #menu-icon {
+            display: block;
+        }
+        #menu.otwarte {
+            display:block;
+        }
+    }*/
